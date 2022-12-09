@@ -211,7 +211,7 @@ query = """
         SELECT p.ownerNo, ownerName, COUNT(*)
         FROM Pet p, Owner o
         WHERE p.ownerNo = o.ownerNo
-        GROUP BY p.ownerNo;     
+        GROUP BY p.ownerNo     
         """
 cursor.execute(query)
 
