@@ -219,7 +219,7 @@ cursor.execute(query)
 query = """
         SELECT *
         FROM Exam
-        WHERE dateSeen BETWEEN "2022-06-01" AND "2022-10-31";    
+        WHERE dateSeen BETWEEN "2022-06-01" AND "2022-10-31"    
         """
 cursor.execute(query)
 
@@ -243,7 +243,7 @@ cursor.execute(query)
 query = """
         SELECT p.petNo, petName, ownerName, examNo, dateSeen
         FROM Pet p, Exam e, Owner o
-        WHERE p.ownerNo = o.ownerNo AND p.petNo = e.petNo;
+        WHERE p.ownerNo = o.ownerNo AND p.petNo = e.petNo
         """
 cursor.execute(query)
 
